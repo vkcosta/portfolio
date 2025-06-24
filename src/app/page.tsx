@@ -1,7 +1,5 @@
-import AboutMe from "./components/AboutMe";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <AboutMe></AboutMe>
-  );
+  redirect('/about')
 }

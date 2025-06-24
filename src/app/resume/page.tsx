@@ -1,9 +1,9 @@
-import Resume from "../components/Resume"
+import Resume from "./Resume"
 
 const AboutPage = () => {
   return (
     <>
-      <h2>Resume</h2>
+      <h2 className="title-page">Resume</h2>
       <Resume />
     </>
   )

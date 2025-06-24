@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { profile } from "./constants";
 import Menu from "./components/Menu";
 
 const geistSans = Geist({
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfólio Vitor Knupp",
-  description: "Portfólio de desenvolvedor web",
+  title: `Portfólio ${profile.name}`,
+  description: `${profile.occupation}`,
 };
 
 export default function RootLayout({
@@ -27,13 +28,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Menu></Menu>
+
         <div className="portfolio-container">
-          <Sidebar />
-          <main className="content">{children}</main>
+          <Menu />
+
+          <div className="container" style={{ display: "flex" }}>
+            <Sidebar />
+            <main className="content">{children}</main>
+          </div>
         </div>
 
       </body>
