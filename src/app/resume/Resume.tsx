@@ -10,7 +10,6 @@ const Resume = () => {
       {resume.map(({ title, items, icon }, index) => (
         <div key={index}>
           <TimelineSection title={title} items={items} icon={icon}></TimelineSection>
-          <p></p>
         </div>
       ))}
       <Skills skills={profile.skills}></Skills>

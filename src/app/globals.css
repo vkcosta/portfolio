@@ -71,7 +71,6 @@ body {
   top: 10px;
   background-color: #252525;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-  /* padding: 20px; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

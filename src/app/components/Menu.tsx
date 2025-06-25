@@ -15,7 +15,7 @@ const Menu = () => {
   const normalizePath = (path: string) => path.replace(/\/$/, '');
 
   return (
-    <nav className="flex justify-center items-center space-x-8 py-3 bg-[#252525] text-white shadow-md shadow-black/30 rounded-[15px]">
+    <nav className="bg-[#252525] backdrop-blur-md text-white shadow-lg rounded-full px-6 py-3 border border-white/10">
       {links.map(({ href, label }) => {
         const isActive = normalizePath(pathname || "") === normalizePath(href);
         return (
