@@ -15,7 +15,7 @@ type SkillsProps = {
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
     return (
         <section className="p-6">
-            <h2 className="wtitle-page">Skills</h2>
+            <h2 className="title-page">Skills</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {skills.map((skill, index) => {
                     const Icon = skill.icon;
