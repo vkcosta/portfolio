@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { profile } from '../constants';
 
 const Sidebar: React.FC = () => {
@@ -49,11 +49,18 @@ const Sidebar: React.FC = () => {
         <div className="info-icons">
           <FontAwesomeIcon icon={faLocationDot} /><p>{profile.address}</p>
         </div>
+
+        <div className="info-icons">
+          <FontAwesomeIcon icon={faPhone} /><p>{profile.phone}</p>
+        </div>
+
         <div className="info-icons">
           <FontAwesomeIcon icon={faEnvelope} /><p>{profile.email}</p>
         </div>
       </div>
-      <button>Download CV</button>
+      <a href={profile.link_download_cv}>
+        <button>Download CV</button>
+      </a>
     </aside>
   );
 };

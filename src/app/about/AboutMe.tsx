@@ -2,7 +2,13 @@ const AboutMe: React.FC = () => {
   return (
     <section className="about-me">
       <p>
-        Olá! <span className="highlight">Meu nome é Vitor Knupp</span> e sempre fui fascinado por como a tecnologia pode transformar e automatizar tarefas do dia a dia. Com o tempo, fui me aprofundando em ferramentas que facilitam esse processo, como <span className="highlight">Angular, TypeScript, Node.js, PostgreSQL e Docker</span>, que considero essenciais para a construção de soluções eficientes. Hoje, estou expandindo meus conhecimentos e explorando <span className="highlight">novas possibilidades com Next.js e React</span>, que estão sendo um dos meus principais focos de estudo.
+        <span className="highlight">Desenvolvedor Full Stack com mais de 6 anos de experiência em desenvolvimento de aplicações web, com participações pontuais em projetos desktop e mobile. Tenho forte habilidade na construção de soluções escaláveis, performáticas e fáceis de usar, utilizando tecnologias modernas como Angular, TypeScript, Node.js, PostgreSQL e Docker</span>.
+      </p>
+      <br />
+      <p>
+        Olá! Sou <span className="highlight">Vitor Knupp</span>, apaixonado por como a tecnologia pode transformar e automatizar tarefas do dia a dia. Com o tempo, aprofundei meus conhecimentos em ferramentas que tornam esse processo mais eficiente, e hoje continuo evoluindo com <span className="highlight">foco em frontend e backend web</span>. Atualmente, estou expandindo meus estudos com <span className="highlight">Next.js e React</span>, explorando novas abordagens para construir experiências ainda mais modernas e otimizadas.
+
+        Sou entusiasta de código limpo, boas práticas e melhoria contínua — <span className="highlight">sempre buscando entregar soluções de qualidade com propósito</span>.
       </p>
       <br />
       <p>

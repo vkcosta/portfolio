@@ -2,19 +2,11 @@
 
 import { profile } from "../constants";
 
+//TODO: Acrescentar o mapa com minha localização -leaflet
 const Contact: React.FC = () => {
   return (
 
     <div className="space-y-4" >
-      <div className="flex items-center space-x-3">
-        <svg className="w-6 h-6" fill="none" stroke="#f5f5f7"
-          viewBox="0 0 24 24">
-          <path
-            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
-        </svg>
-        <a href={"mailto:" + profile.email} className="hover:underline">{profile.email}</a>
-      </div>
-
       <div className="flex items-center space-x-3">
         <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor"
           viewBox="0 0 24 24">
@@ -22,6 +14,15 @@ const Contact: React.FC = () => {
             d="M3 5a2 2 0 012-2h1.28a1 1 0 01.95.68l1.18 3.54a1 1 0 01-.2.92L7.5 10.5a11.05 11.05 0 005 5l2.36-1.71a1 1 0 01.92-.2l3.54 1.18a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z" />
         </svg>
         <span>{profile.phone}</span>
+      </div>
+
+      <div className="flex items-center space-x-3">
+        <svg className="w-6 h-6" fill="none" stroke="#f5f5f7"
+          viewBox="0 0 24 24">
+          <path
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
+        </svg>
+        <a href={"mailto:" + profile.email} className="hover:underline">{profile.email}</a>
       </div>
 
       <div className="flex items-center space-x-3">

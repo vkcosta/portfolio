@@ -66,9 +66,9 @@ body {
 /* Sidebar */
 .sidebar {
   width: 300px;
-  height: 25%;
+  height: 97vh;
   position: sticky;
-  top: 20px;
+  top: 10px;
   background-color: #252525;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   /* padding: 20px; */
